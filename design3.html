@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design 3 - Envision</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <nav>
+      <ul class="back-to-gallery">
+        <li>
+          <a href="gallery.html">
+            <span class="arrow">←</span> Back to Gallery
+          </a>
+        </li>
+      </ul>
+    </nav>    
+    <ul class="nav-links">
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="create.html">Create</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="design-page">
+    <div class="design-container">
+      <div class="carousel">
+        <button class="prev" onclick="prevMedia()">❮</button>
+        <div class="carousel-container">
+          <div class="carousel-content">
+            <div class="carousel-item active">
+              <img src="images/UNOFFICIALdesign3.jpg" alt="Design 3 Image">
+            </div>
+            <div class="carousel-item">
+              <img src="images/design3sketch.jpg" alt="Design 3 Alternate Image">
+            </div>
+          </div>
+        </div>
+        <button class="next" onclick="nextMedia()">❯</button>
+      </div>
+
+      <div class="design-info">
+        <h2>Design 3</h2>
+        <p>This design is a refined take on modern high-fashion streetwear, seamlessly merging fluid movement with structured elegance. The monochromatic gray palette creates a sophisticated yet effortless aesthetic, embodying contemporary minimalism.</p>
+        <p>Crafted from premium lightweight fabrics, the ensemble features a flowing, belted wrap coat with a dramatic silhouette, paired with sleek shorts for a bold contrast. Metallic high-top sneakers add a futuristic edge, while subtle accessories enhance the overall refined look.</p>
+        <p>Designed for the runway, this piece redefines urban luxury, balancing power and grace in a statement of cutting-edge fashion.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Envision. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

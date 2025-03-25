@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create - Envision</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">ENVISION</div>
+    <ul class="nav-links">
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="create.html" class="active">Create</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="create-page">
+    <h1>Create Your Own Fashion Design</h1>
+    <p>Describe your fashion design, and our AI will generate images of it on a runway!</p>
+    
+    <!-- Privacy Notice -->
+    <div class="privacy-notice">
+      <h3>Privacy Notice</h3>
+      <p>Your design prompts are sent to a third-party AI service (getimg.ai) to generate images. Please do not include personal or sensitive information in your prompts, as we cannot guarantee the privacy of data processed by external services.</p>
+    </div>
+
+    <!-- Form for user input -->
+    <section class="create-form">
+      <form id="design-form">
+        <label for="design-prompt">Describe Your Design:</label>
+        <textarea id="design-prompt" name="design-prompt" rows="4" placeholder="e.g., A futuristic minimalist dress with metallic accents, worn on a runway with bright lights" required></textarea>
+        <button type="submit">Generate Design</button>
+      </form>
+      <div id="loading-spinner" class="loading-spinner" style="display: none;">
+        <p>Generating your design...</p>
+        <div class="spinner"></div>
+      </div>
+    </section>
+
+    <!-- Section to display generated images -->
+    <section class="generated-designs" id="generated-designs">
+      <h2>Generated Designs</h2>
+      <div class="design-gallery" id="design-gallery">
+        <!-- Generated images will be inserted here -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Envision. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

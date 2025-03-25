@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design 1 - Envision</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <nav>
+      <ul class="back-to-gallery">
+        <li>
+          <a href="gallery.html">
+            <span class="arrow">&#8592;</span> Back to Gallery
+          </a>
+        </li>
+      </ul>
+    </nav>    
+    <ul class="nav-links">
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="create.html">Create</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="design-page">
+    <div class="design-container">
+      <div class="carousel">
+        <button class="prev" onclick="prevMedia()">&#10094;</button>
+        <div class="carousel-container">
+          <div class="carousel-content">
+            <div class="carousel-item active">
+              <img src="images/UNOFFICIALdesign1.jpg" alt="Design 1 Image">
+            </div>
+            <div class="carousel-item">
+              <img src="images/design1sketch.jpg" alt="Design 1 Sketch">
+            </div>
+          </div>
+        </div>
+        <button class="next" onclick="nextMedia()">&#10095;</button>
+      </div>
+
+      <div class="design-info">
+        <h2>Design 1</h2>
+        <p>This design is a bold and modern take on high-fashion streetwear. Featuring a mix of sleek grays, blacks, and whites, it blends urban aesthetics with avant-garde elements.</p>
+        <p>Materials include high-quality technical fabrics, layered textures, and metallic accessories to enhance the futuristic look.</p>
+        <p>Perfect for runway showcases, this outfit is a statement piece that embodies contemporary fashion innovation.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Envision. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

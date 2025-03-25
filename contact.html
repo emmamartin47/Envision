@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Envision</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">ENVISION</div>
+    <ul class="nav-links">
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="create.html">Create</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="contact-container">
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you! Feel free to reach out using the form below or through our contact details.</p>
+    
+    <div class="contact-content">
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <form action="https://formspree.io/f/xgvoygjb" method="POST">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+        <p><strong>Email:</strong> <a href="mailto:contact@envision.com">contact@envision.com</a></p>
+        <p><strong>Phone:</strong> +1 (331) 201-6164</p>
+
+        <h3>Socials</h3>
+        <div class="social-icons">
+          <a href="https://linkedin.com/in/emmamartindepaul" target="_blank">LinkedIn</a>
+          <a href="https://github.com/emmamartin47" target="_blank">GitHub</a>
+          <a href="https://www.emma-martin.com/" target="_blank">Portfolio</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Envision. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+</body>
+</html>

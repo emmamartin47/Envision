@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design 2 - Envision</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <nav>
+      <ul class="back-to-gallery">
+        <li>
+          <a href="gallery.html">
+            <span class="arrow">←</span> Back to Gallery
+          </a>
+        </li>
+      </ul>
+    </nav>    
+    <ul class="nav-links">
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="create.html">Create</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="design-page">
+    <div class="design-container">
+      <div class="carousel">
+        <button class="prev" onclick="prevMedia()">❮</button>
+        <div class="carousel-container">
+          <div class="carousel-content">
+            <div class="carousel-item active">
+              <img src="images/UNOFFICIALdesign2.jpg" alt="Design 2 Image">
+            </div>
+            <div class="carousel-item">
+              <img src="images/design2sketch.jpg" alt="Design 2 Sketch">
+            </div>
+          </div>
+        </div>
+        <button class="next" onclick="nextMedia()">❯</button>
+      </div>
+
+      <div class="design-info">
+        <h2>Design 2</h2>
+        <p>This design is a striking fusion of high-fashion and streetwear, seamlessly blending structured tailoring with urban edge. The monochromatic palette of crisp whites and deep grays creates a sophisticated yet modern aesthetic.</p>
+        <p>Crafted from premium technical fabrics, the ensemble features layered textures and bold silhouettes. The oversized coat, cinched at the waist with a sculptural fabric belt, adds dimension, while metallic accessories and shimmering high-top sneakers inject a futuristic vibe.</p>
+        <p>Designed for the runway, this look is a statement of contemporary elegance, redefining the boundaries between luxury fashion and street-style innovation.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Envision. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
