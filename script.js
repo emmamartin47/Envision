@@ -1,13 +1,21 @@
-// Carousel Functionality (Design Pages)
 let currentIndex = 0;
 
 function showMedia(index) {
   const items = document.querySelectorAll('.carousel-item');
+  if (!items.length) {
+    console.error('No carousel items found!');
+    return;
+  }
+  // Ensure index stays within bounds
   if (index >= items.length) currentIndex = 0;
-  if (index < 0) currentIndex = items.length - 1;
+  else if (index < 0) currentIndex = items.length - 1;
+  else currentIndex = index;
+
+  // Toggle active class
   items.forEach((item, i) => {
     item.classList.toggle('active', i === currentIndex);
   });
+  console.log('Showing media at index:', currentIndex);
 }
 
 function nextMedia() {
@@ -20,20 +28,38 @@ function prevMedia() {
   showMedia(currentIndex);
 }
 
-// Single DOMContentLoaded event listener for all functionality
 document.addEventListener('DOMContentLoaded', () => {
-  // Carousel initialization (only for pages with a carousel)
+  console.log('DOM fully loaded, initializing carousel...');
+  
+  // Find the carousel on the page
   const carouselContainer = document.querySelector('.carousel');
   if (carouselContainer) {
-    const prevButton = document.querySelector('.prev');
-    const nextButton = document.querySelector('.next');
+    const prevButton = carouselContainer.querySelector('.prev');
+    const nextButton = carouselContainer.querySelector('.next');
+    
     if (prevButton && nextButton) {
-      prevButton.addEventListener('click', prevMedia);
-      nextButton.addEventListener('click', nextMedia);
-      showMedia(currentIndex); // Ensure the first item is visible
+      // Remove inline onclick if present (for consistency)
+      prevButton.removeAttribute('onclick');
+      nextButton.removeAttribute('onclick');
+
+      // Add event listeners
+      prevButton.addEventListener('click', () => {
+        console.log('Previous button clicked');
+        prevMedia();
+      });
+      
+      nextButton.addEventListener('click', () => {
+        console.log('Next button clicked');
+        nextMedia();
+      });
+
+      // Initialize carousel with the first item
+      showMedia(currentIndex);
     } else {
-      console.error('Carousel buttons not found!');
+      console.error('Carousel buttons not found! Check your HTML structure.');
     }
+  } else {
+    console.log('No carousel found on this page.');
   }
 
   // Create page functionality
